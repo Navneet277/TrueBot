@@ -18,7 +18,7 @@ TrueBot is an AI-powered system that uses advanced Natural Language Processing (
 
 1. **Get the Code**:
 ```bash
-git clone https://github.com/yourusername/TrueBot.git
+git clone https://github.com/Navneet277/TrueBot.git
 cd TrueBot
 ```
 
@@ -158,7 +158,7 @@ TrueBot/
 
 2. **Clone the Repository**:
 ```bash
-git clone https://github.com/yourusername/TrueBot.git
+git clone https://github.com/Navneet277/TrueBot.git
 cd TrueBot
 ```
 
@@ -303,6 +303,8 @@ pytest tests/
 
 ### ☁️ Streamlit Cloud Deployment
 
+Direct Link: https://truebot.streamlit.app/
+
 1. **Prepare Your Repository**:
    - Create a GitHub repository for your project
    - Ensure your repository has:
@@ -324,13 +326,7 @@ pytest tests/
      - Configure NLTK data
      - Handle model training on first run
 
-4. **Advanced Configuration** (Optional):
-   - Set up secrets management for API keys
-   - Configure custom subdomains
-   - Set up authentication
-   - Add deployment region preferences
-
-5. **Post-Deployment**:
+4. **Post-Deployment**:
    - Monitor app performance
    - Check resource usage
    - Set up usage alerts
