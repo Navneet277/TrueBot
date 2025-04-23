@@ -118,8 +118,7 @@ Need help? Open an issue on GitHub!
 
 ```
 TrueBot/
-├── .streamlit/              # Streamlit configuration
-│   └── config.toml         # Theme and server settings
+├── config.toml         # Theme and server settings
 ├── models/                 # Directory for saved models (auto-created)
 │   ├── fake_news_model.pkl    # Trained classifier
 │   └── tfidf_vectorizer.pkl   # Text vectorizer
