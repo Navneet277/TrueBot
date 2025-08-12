@@ -58,13 +58,6 @@ Thumbs.db
 *.log
 logs/
 
-# Model files (uncomment if you don't want to commit models)
-# models/
-# *.pkl
-
-# NLTK data (will be downloaded automatically)
-# nltk_data/
-
 # Temporary files
 *.tmp
 *.temp 

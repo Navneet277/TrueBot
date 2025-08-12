@@ -20,6 +20,7 @@ TrueBot/
 ├── train_model.py         # Model training script
 ├── streamlit_app.py       # Streamlit web application
 ├── news_dataset.csv       # Training dataset
+├── .gitignore             # Git ignore file
 └── models/                # Directory for saved models
     ├── fake_news_model.pkl    # Trained model
     └── tfidf_vectorizer.pkl   # TF-IDF vectorizer
@@ -29,7 +30,7 @@ TrueBot/
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/TrueBot.git
+git clone https://github.com/Navneet277/TrueBot.git
 cd TrueBot
 ```
 
@@ -47,11 +48,11 @@ pip install -r requirements.txt
 ## 📋 Dependencies
 
 - Python 3.8+
-- numpy==1.24.3
-- pandas==2.0.3
-- scikit-learn==1.3.0
-- streamlit==1.26.0
-- joblib==1.3.2
+- numpy>=1.21.0,<2.0.0
+- pandas>=1.3.0,<3.0.0
+- scikit-learn>=1.0.0,<2.0.0
+- streamlit>=1.25.0
+- joblib>=1.1.0
 
 ## 🎯 Local Usage
 
@@ -70,33 +71,23 @@ streamlit run streamlit_app.py
 ## ☁️ Streamlit Cloud Deployment
 
 1. **GitHub Setup**:
-   - Push your code to a GitHub repository
-   - Make sure your repository includes:
-     - `requirements.txt`
-     - `streamlit_app.py`
-     - All necessary model files in the `models/` directory
+   - Your code is already on GitHub at [https://github.com/Navneet277/TrueBot.git](https://github.com/Navneet277/TrueBot.git)
+   - All necessary files are included
 
 2. **Streamlit Cloud Setup**:
    - Visit [share.streamlit.io](https://share.streamlit.io)
    - Sign in with your GitHub account
    - Click on "New app"
-   - Select your repository, branch, and main file (`streamlit_app.py`)
+   - Select your repository: `Navneet277/TrueBot`
+   - Set main file to: `streamlit_app.py`
    - Click "Deploy"
 
-3. **Important Deployment Notes**:
-   - Ensure all dependencies are correctly listed in `requirements.txt`
-   - Model files (`fake_news_model.pkl` and `tfidf_vectorizer.pkl`) must be included in the repository
-   - The `models/` directory should be in the same directory as `streamlit_app.py`
-   - Maximum file size limit on Streamlit Cloud is 1GB
-   - App will automatically redeploy when you push changes to GitHub
+3. **Important Notes**:
+   - The requirements.txt uses flexible version constraints for better compatibility
+   - Model files are included in the repository
+   - App will automatically install dependencies
 
-4. **Troubleshooting Deployment**:
-   - Check Streamlit Cloud logs for any error messages
-   - Verify all file paths are correct and use relative paths
-   - Ensure all required files are committed to GitHub
-   - Monitor resource usage within Streamlit Cloud limits
-
-## 🎯 How It Actually Works
+## 🎯 How It Works
 
 1. **Text Analysis**:
    - Converts news text to lowercase for consistency
@@ -122,19 +113,6 @@ streamlit run streamlit_app.py
 - Best suited for obvious cases of misinformation
 - Should be used alongside other fact-checking methods
 - Not a replacement for critical thinking and verification
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
-
-## 📝 Model Training Dataset
-
-The model is trained on a curated dataset containing examples of both real and fake news. The dataset includes:
-- Health and medical news
-- Scientific discoveries
-- Environmental news
-- Technology updates
-- General news items
 
 ## 🔍 Future Improvements
 
