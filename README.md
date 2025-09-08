@@ -1,6 +1,6 @@
 # TrueBot - Fake News Detection System
 
-TrueBot is a machine learning-based fake news detection system that helps users identify potentially misleading news articles. It uses a Random Forest model trained on text patterns commonly found in fake news, such as sensationalist language and clickbait. The system analyzes news text using TF-IDF (Term Frequency-Inverse Document Frequency) vectorization to convert text into numerical features, which are then used to classify the news as potentially real or fake.
+TrueBot is a machine learning-based fake news detection system that helps users identify potentially misleading news articles. It uses a Logistic Regression model trained on text patterns commonly found in fake news, such as sensationalist language and clickbait. The system analyzes news text using TF-IDF (Term Frequency-Inverse Document Frequency) vectorization to convert text into numerical features, which are then used to classify the news as potentially real or fake.
 
 ## 🌟 Features
 
