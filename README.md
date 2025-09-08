@@ -128,6 +128,7 @@ streamlit run streamlit_app.py
 - Navneet Sharma
 - Neha Tamboli
 - Riddhima Taose
+- Nishkarsh Sharma
 
 ## 🙏 Acknowledgments
 
